@@ -10,7 +10,7 @@ class Solution {
         int max = 0 ;  //최빈값의 갯수
         int maxIndex = 0 ; //최빈값 
         
-        for (int i = 0; i<ary.length; i++){
+        for (int i = 0; i<ary.length; i++){ //최빈값 구하기
             if(ary[i]>max){
                 max = ary[i];
                 maxIndex = i;
@@ -19,7 +19,8 @@ class Solution {
         
         int count =0;
         for (int i = 0; i<ary.length; i++){ //최빈값 갯수 확인
-            if(ary[i] == max) count++;
+            if(ary[i] == max) 
+                count++;
         }
         if(count>1){
             return answer = -1;
